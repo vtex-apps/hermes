@@ -1,11 +1,12 @@
 {
-  "vendor": "CHANGE_ME",
-  "name": "CHANGE_ME",
+  "vendor": "vtexpages",
+  "name": "heres",
   "version": "0.0.0",
-  "title": "CHANGE_ME",
-  "description": "CHANGE_ME",
+  "title": "HERMES",
+  "description": "a simple app to centralize some service status",
   "builders": {
     "react": "3.x",
+    "pages": "1.x",
     "messages": "1.x",
     "docs": "0.x"
   },

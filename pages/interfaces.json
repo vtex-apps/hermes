@@ -1,0 +1,8 @@
+{
+  "app": {
+    "component": "*"
+  },
+  "app.hermes": {
+    "component": "index"
+  }
+}
