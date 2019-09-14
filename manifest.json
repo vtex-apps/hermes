@@ -5,6 +5,8 @@
   "title": "HERMES",
   "description": "a simple app to centralize some service status",
   "builders": {
+    "node": "4.x",
+    "graphql": "1.x",
     "react": "3.x",
     "pages": "1.x",
     "messages": "1.x",
@@ -13,9 +15,16 @@
   "dependencies": {
     "vtex.styleguide": "9.x"
   },
-  "registries": [
-    "smartcheckout"
+
+  "registries": ["smartcheckout"],
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "kctbh9vrtdwd.statuspage.io",
+        "path": "*"
+      }
+    }
   ],
-  "policies": [],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
