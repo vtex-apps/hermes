@@ -1,7 +1,7 @@
 import { Service, ServiceContext } from '@vtex/api'
 
 import { Clients } from './clients'
-import getExternalStatus from './resolvers/status'
+import getGitHubStatus from './resolvers/status'
 
 const MEDIUM_TIMEOUT_MS = 30 * 1000
 
@@ -25,7 +25,7 @@ export default new Service<Clients>({
     resolvers: {
       // Mutation: {},
       Query: {
-        getExternalStatus,
+        getGitHubStatus,
       },
     },
   },

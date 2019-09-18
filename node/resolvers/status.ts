@@ -1,6 +1,6 @@
-async function getExternalStatus(_: string, __: any, ctx: Context) {
+async function getGitHubStatus(_: string, __: any, ctx: Context) {
   const deliveryApps = await ctx.clients.status.getStatus()
   return deliveryApps
 }
 
-export default getExternalStatus
+export default getGitHubStatus

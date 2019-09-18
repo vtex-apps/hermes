@@ -10,7 +10,7 @@ type StatusDescriptionInfo {
 }
 
 type Query {
-  getExternalStatus: StatusContent @cacheControl(scope: PRIVATE, maxAge: SHORT)
+  getGitHubStatus: StatusContent @cacheControl(scope: PRIVATE, maxAge: SHORT)
 }
 
 # type Mutation {
