@@ -7,7 +7,7 @@ interface Props {
 }
 
 const Logo: React.FC<Props> = ({
-  color = "#fff",
+  color = "#000",
   height = '32pt',
   width = '32pt',
 }) => {
